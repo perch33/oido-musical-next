@@ -1,0 +1,36 @@
+.footers {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  background-color: rgb(245, 245, 245);
+}
+
+.footers p {
+  margin: 0;
+  line-height: 30px;
+  padding: 15px 0 15px;
+}
+
+.menuRedes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1em;
+  padding-bottom: 15px;
+}
+
+.menuRedes div {
+  margin: 0 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menuRedes div a {
+  margin: 0 3px;
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
