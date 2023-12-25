@@ -63,10 +63,7 @@ const Exercise = () => {
     const newAudio = new Audio(newPath);
     newAudio.play();
 
-    setTimeout(() => {
-      newAudio.pause();
-      newAudio.currentTime = 0;
-    }, 1000);
+    
   };
 
   const handleRepeat = () => {
@@ -77,10 +74,7 @@ const Exercise = () => {
     setTimeout(() => {
       setRotateB((rotateB) => !rotateB);
     }, 800);
-    setTimeout(() => {
-      audio.pause();
-      audio.currentTime = 0;
-    }, 1000);
+    
   };
 
   const handleComparison = (e) => {
