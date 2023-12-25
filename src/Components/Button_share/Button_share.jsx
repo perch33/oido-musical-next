@@ -12,7 +12,9 @@ const ShareButton = () => {
       if (navigator.share) {
         await navigator.share({
           title: document.title,
-          text: `Mis puntos ganados son + ${punctuationText}`, // Aquí se incluyen los puntos ganados
+          text: `Mi puntuación es de + ${punctuationText.slice(
+            punctuationText.lastIndexOf(":") + 1
+          )} Puntos`, // Aquí se incluyen los puntos ganados
           url: window.location.href,
         });
       } else {
